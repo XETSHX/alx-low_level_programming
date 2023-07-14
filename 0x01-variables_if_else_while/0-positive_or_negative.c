@@ -5,10 +5,10 @@
 /**
  * main - ENTRY point
  *
- * Description : A C program to check numbers
+ * Description: false or true validation
  *
- * RETURN : ALWAYS 0 (Success)
-**/
+ * RETURN : 0 (Success)
+*/
 
 int main(void)
 {
