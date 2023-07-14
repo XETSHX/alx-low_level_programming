@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- * main - ENTRY point
+ * main - Entry point
  *
- * Description: false or true validation
+ * Description: A C program to check numbers
  *
- * RETURN : 0 (Success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
