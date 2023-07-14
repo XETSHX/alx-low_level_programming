@@ -1,13 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
+ *
  * main - ENTRY POINT
  *
  * Description A C program that check num
  *
  * Return: ALWAYS 0 (Success)
+ *
 */
+
 int main(void)
 {
 	int n;
