@@ -5,9 +5,8 @@
  *	separated by comma, follwed
  *	by space and number should be
  *	printed in order
- *@n: input
+ * @n: input
 **/
-
 void print_to_98(int n)
 {
 	int count;
