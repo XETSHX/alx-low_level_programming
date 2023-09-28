@@ -1,35 +1,17 @@
-#include "main.h"
-
-
+#include "holberton.h"
 /**
-
- * get_bit - returns the value of a bit at an index in a decimal number
-
- * @n: number to search
-
- * @index: index of the bit
-
- *
-
- * Return: value of the bit
-
+ * get_bit - Entry Point
+ * @n: input
+ * @index: index
+ * Return: 0
  */
-
 int get_bit(unsigned long int n, unsigned int index)
-
 {
+	unsigned long int m;
 
-        int bit_val;
+	if (index > 63)
+		return (-1);
 
-
-        if (index > 63)
-
-                return (-1);
-
-
-        bit_val = (n >> index) & 1;
-
-
-        return (bit_val);
-
+	m = 1 << index;
+	return ((n & m) > 0);
 }
