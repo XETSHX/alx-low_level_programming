@@ -1,21 +1,35 @@
-#include <stdio.h>
-#include "holberton.h"
-#include <math.h>
+#include "main.h"
+
+
 /**
- * get_bit - Write a function that returns the value of a bit at a
- * given index.
- * Prototype: int get_bit(unsigned long int n, unsigned int index);
- * @index: is the index, starting from 0 of the bit you want to get
- * @n: bit value in the index.
- * Return: the value of the bit at index index or -1 if an error occured
+
+ * get_bit - returns the value of a bit at an index in a decimal number
+
+ * @n: number to search
+
+ * @index: index of the bit
+
+ *
+
+ * Return: value of the bit
+
  */
+
 int get_bit(unsigned long int n, unsigned int index)
+
 {
-	if (index > 63)
-		return (-1);
-	if (index == 0)
-	{
-		return (n & 1);
-	}
-	return (get_bit(n >> 1, index - 1));
+
+        int bit_val;
+
+
+        if (index > 63)
+
+                return (-1);
+
+
+        bit_val = (n >> index) & 1;
+
+
+        return (bit_val);
+
 }
